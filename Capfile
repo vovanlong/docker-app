@@ -27,7 +27,9 @@ install_plugin Capistrano::SCM::Git
 #   https://github.com/capistrano/passenger
 #
 # require "capistrano/rvm"
-require "capistrano/rbenv"
+require 'rvm1/capistrano3'
+
+# require "capistrano/rbenv"
 # require "capistrano/chruby"
 require "capistrano/bundler"
 require "capistrano/rails/migrations"
@@ -39,5 +41,5 @@ install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Nginx
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
-set :rbenv_type, :user
-set :rbenv_ruby_version, "2.5.1"
+set :rvm_type, :user
+set :rvm1_ruby_version, "2.5.1p57"

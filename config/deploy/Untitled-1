@@ -1,0 +1,9 @@
+sudo mkdir /deploy
+sudo mkdir /deploy/apps
+sudo mkdir /deploy/apps/docker_app
+sudo chown -R root:root /deploy/apps/docker_app
+sudo mkdir /deploy/apps/docker_app/shared
+sudo mkdir /deploy/apps/docker_app/shared/config
+nano /deploy/apps/docker_app/shared/config/database.yml
+
+export SECRET_KEY_BASE="fa81824c6a27e162078b2987c8eae3490ccb18109c9d8dd84c822e13b6a8911a460389ec3b7920d92d4e5c9e527ac9d0bdb3a256d8cb018803a28b5e57f25cc9"
