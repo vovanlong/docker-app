@@ -44,6 +44,5 @@ Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
 set :rvm_type, :user
 set :rvm_ruby_version, "2.5.1p57"
 set :rvm_roles, [:app, :web]
-set :default_shell, '/bin/bash -l'
 
 
