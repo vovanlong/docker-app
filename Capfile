@@ -29,13 +29,13 @@ install_plugin Capistrano::SCM::Git
 
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
-require "capistrano/bundler"
+require "capistrano/rvm"
 require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 require "capistrano/rails/assets"
 
+require "capistrano/bundler"
 require "capistrano/puma"
-require "capistrano/rvm"
 
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Nginx
