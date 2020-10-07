@@ -65,4 +65,4 @@ set :rails_env, :production
 set :use_sudo, true
 set :deploy_to, "/deploy/apps/docker_app"
 set :branch, :master
-server "127.0.0.1", user: "root", roles: %w(web app db), port: "32770"
+server "192.168.1.24", user: "root", roles: %w(web app db), port: "32771"
