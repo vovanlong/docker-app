@@ -42,4 +42,6 @@ install_plugin Capistrano::Puma::Nginx
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
 set :rvm_type, :user
-set :rvm1_ruby_version, "2.5.1p57"
+set :rvm_ruby_version, "2.5.1p57"
+set :rvm_roles, [:app, :web]
+
