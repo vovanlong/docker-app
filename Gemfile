@@ -32,10 +32,11 @@ group :test do
   gem "chromedriver-helper"
 end
 
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem "capistrano", require: false
 gem "capistrano3-puma", require: false
 gem "capistrano-rails", require: false
 gem "capistrano-bundler", require: false
 gem "capistrano-rvm", require: false
 gem "capistrano-sidekiq", require: false
+gem "bcrypt_pbkdf"
