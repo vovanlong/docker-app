@@ -5,4 +5,5 @@ Làm ABC XYZ
 ### Checklist
 - [x] Làm A
 - [x] Làm B
-- [ ] Làm c
+- [ ] Làm C
+- [ ] Làm D
